@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "hook/orderHooks.ts",
-    "src/types"
+    "src/types",
+    "declarations.d.ts"
   ],
   "exclude": ["node_modules"]
 }
