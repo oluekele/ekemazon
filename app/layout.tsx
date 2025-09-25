@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-const inter = Inter({ subsets: ["latin"] });
+// import { Inter } from "next/font/google";
+// // import "./globals.css";
+// const inter = Inter({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"], // choose what you need
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
-  title: "Eke e-commerce",
+  title: "Ekemazon",
   description: "Next.js e-commerce app",
 };
 
@@ -15,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
