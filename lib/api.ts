@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const api =
-  process.env.NODE_ENV === "development" ? "http://localhost:6040" : "/";
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:6040"
+    : "https://ekemazon-b-git-main-ekeles-projects.vercel.app";
 
 export const axiosInstance = axios.create({
   baseURL: api,
